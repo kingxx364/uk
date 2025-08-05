@@ -1,21 +1,96 @@
 body {
-    background-color: white;
-    color: white;
-    font-family: "Chakra Petch", sans-serif;
-    margin: 0px;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-p {
-    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Branco suave para o fundo */
+    color: #212529; /* Cor de texto padrão, um cinza escuro */
+    line-height: 1.6;
 }
 
 header {
-    border-bottom: solid 2px rgb(42, 122,228);
-    padding: 20px;
-    font-size: 32px;
-    color: rgb(42,122,228);
+    background-color: #002d5c; /* Azul escuro principal */
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    border-bottom: 5px solid white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+section {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-left: 5px solid #002d5c; /* Linha de destaque azul */
+}
+
+h2 {
+    color: #002d5c; /* Título em azul escuro */
+    border-bottom: 2px solid #002d5c;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background-color: #e9ecef; /* Um cinza claro para os itens da lista */
+    margin-bottom: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #002d5c; /* Rodapé em azul escuro */
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+}
+
+footer a {
+    color: #e9ecef; /* Cor do link para combinar com o fundo */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    position: relative;
+    height: 0;
+    margin-top: 1.5rem;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
