@@ -54,18 +54,24 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.nav-links a {
+.nav-button {
+    display: inline-block;
+    background-color: transparent;
     color: var(--highlight-color);
+    padding: 10px 20px;
     text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s ease;
+    border: 2px solid var(--highlight-color);
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: var(--text-color-light);
+.nav-button:hover {
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
 }
 
 .hero-content {
@@ -186,13 +192,13 @@ li {
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
-    box-shadow: none; /* Removendo o sombreamento */
+    box-shadow: none;
 }
 
 .action-button:hover {
     background-color: var(--primary-color);
     transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra mais profissional no hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .secondary-button {
