@@ -18,15 +18,20 @@ body {
 }
 
 /* --- Hero Section (Página Inicial) --- */
-
 .hero {
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('https://www.instagram.com/p/CXW9IqDhQHf/');
+    background-image: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('https://picsum.photos/1920/1080?random=1');
     background-size: cover;
     background-position: center;
     color: var(--text-color-light);
     text-align: center;
     padding: 0;
+}
+
+.header-small {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 1.5rem 0;
 }
 
 .nav-bar {
@@ -35,10 +40,7 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: auto;
-    padding: 1.5rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    padding: 0 2rem;
 }
 
 .logo {
@@ -92,13 +94,10 @@ body {
 }
 
 /* --- Conteúdo Principal --- */
-
-main {
+.page-container {
     max-width: 1200px;
-    margin: -3rem auto 4rem;
+    margin: 4rem auto;
     padding: 0 2rem;
-    position: relative;
-    z-index: 10;
 }
 
 .section-container {
@@ -113,11 +112,20 @@ main {
     background-color: var(--secondary-color);
 }
 
+.section-container:nth-child(2) {
+  background-color: var(--text-color-light);
+}
+
+.text-center {
+    text-align: center;
+}
+
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
+    justify-content: center;
 }
 
 .gallery-img {
@@ -126,6 +134,13 @@ main {
     height: auto;
     border-radius: 10px;
     box-shadow: var(--shadow);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
 }
 
 h2 {
@@ -156,10 +171,10 @@ li {
     padding: 1rem;
     border-radius: 8px;
     border-left: 5px solid var(--accent-color);
+    color: var(--text-color-dark);
 }
 
 /* --- Botões de Ação --- */
-
 .action-button {
     display: inline-block;
     background-color: var(--accent-color);
@@ -174,26 +189,29 @@ li {
 }
 
 .action-button:hover {
-    background-color: var(--highlight-color);
+    background-color: #A90D24;
     transform: translateY(-3px);
 }
 
 .secondary-button {
-    background-color: var(--primary-color);
+    background-color: transparent;
+    color: var(--text-color-light);
+    border: 2px solid var(--text-color-light);
 }
 
 .secondary-button:hover {
-    background-color: var(--highlight-color);
+    background-color: var(--text-color-light);
+    color: var(--accent-color);
 }
 
 .button-group {
     margin-top: 2rem;
     display: flex;
     gap: 1rem;
+    justify-content: center;
 }
 
 /* --- Secção de Contato --- */
-
 .contact-section {
     display: flex;
     gap: 2rem;
@@ -216,13 +234,11 @@ li {
 }
 
 /* --- Rodapé --- */
-
 .footer {
     background-color: var(--primary-color);
     color: var(--text-color-light);
     text-align: center;
     padding: 2rem 0;
-    margin-top: 4rem;
 }
 
 .footer a {
@@ -241,7 +257,6 @@ li {
 }
 
 /* --- Responsividade --- */
-
 @media (max-width: 768px) {
     .nav-bar {
         flex-direction: column;
@@ -262,7 +277,7 @@ li {
         align-items: center;
     }
     .section-container {
-        flex-direction: column;
+        flex-direction: column !important;
     }
     .contact-section {
         flex-direction: column;
