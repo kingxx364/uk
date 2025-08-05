@@ -3,73 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colégio Cívico Militar Professora Luiza Ross - Boqueirão</title>
+    <title>Colégio Cívico Militar Professora Luiza Ross</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav>
+    <header class="hero" id="home">
+        <nav class="nav-bar">
             <div class="logo">Colégio Luiza Ross</div>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#diferenciais">Diferenciais</a></li>
-                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#ensino">Ensino</a></li>
+                <li><a href="#matriculas">Matrículas</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <div class="header-content">
+        <div class="hero-content">
             <h1>Colégio Cívico Militar Professora Luiza Ross</h1>
-            <p>Excelência em Educação no Boqueirão</p>
+            <p class="welcome-text">Bem-vindo ao Colégio Luiza Ross, onde a educação de qualidade se une à disciplina e ao respeito para formar cidadãos preparados para o futuro. Conheça nossa escola e faça parte desta história de sucesso!</p>
+            <div class="hero-buttons">
+                <a href="#matriculas" class="action-button">Faça sua matrícula</a>
+                <a href="https://www.youtube.com/watch?v=WDm21P0u-QU" class="action-button secondary-button" target="_blank">Assista ao vídeo</a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <section id="sobre" class="card">
-            <h2>Sobre o Colégio Cívico-Militar</h2>
-            <p>O Colégio Cívico-Militar Professora Luiza Ross integra o modelo de ensino do Paraná, unindo a alta qualidade pedagógica com princípios de civismo e gestão militar. Esta proposta visa o desenvolvimento integral do aluno, focando não apenas no desempenho académico, mas também na formação de valores como disciplina, respeito e patriotismo.</p>
-            <p>A gestão do colégio é partilhada entre diretores civis e militares. A equipa pedagógica civil continua responsável pelo conteúdo curricular e pelo processo de ensino, enquanto a equipa militar atua na gestão de disciplina e na promoção de atividades cívicas e extracurriculares. A rotina dos alunos inclui o uso de uniformes, cumprimento de horários e participação em cerimónias cívicas, que reforçam o senso de comunidade e responsabilidade.</p>
-            <p>Este modelo de ensino busca preparar os estudantes para se tornarem cidadãos exemplares, com uma base sólida de conhecimento e caráter, prontos para enfrentar os desafios do futuro.</p>
+    <main>
+        <section id="sobre" class="section-container">
+            <div class="section-content">
+                <h2>Sobre o Colégio</h2>
+                <h3>Nossa História</h3>
+                <p>Fundado no coração do Boqueirão, o Colégio Luiza Ross tem orgulho de sua tradição e compromisso com a comunidade. Nossa missão é oferecer ensino de excelência aliado a valores cívico-militares que fortalecem o caráter dos nossos alunos.</p>
+                <h3>Modelo Cívico-Militar</h3>
+                <p>Aqui, unimos a rotina escolar com a disciplina e organização militar, promovendo valores como responsabilidade, respeito e trabalho em equipa. Nosso modelo cívico-militar estimula o desenvolvimento académico e pessoal de cada estudante.</p>
+                <div class="image-gallery">
+                    <img src="https://www.instagram.com/p/CXW9IqDhQHf/" alt="Foto da escola" class="gallery-img">
+                    <img src="https://www.instagram.com/p/CQ5bsx6hyD_/" alt="Atividades cívico-militares" class="gallery-img">
+                    <img src="https://www.instagram.com/p/CHb8bcjhnAY/" alt="Equipe do colégio" class="gallery-img">
+                </div>
+            </div>
         </section>
 
-        <div class="side-content">
-            <section id="diferenciais" class="card">
-                <h2>Nossos Diferenciais</h2>
-                <ul>
-                    <li>Ensino Fundamental e Médio</li>
-                    <li>Atividades Extracurriculares</li>
-                    <li>Laboratórios Modernos</li>
-                    <li>Biblioteca com vasto acervo</li>
-                </ul>
-            </section>
-        
-            <section id="localizacao" class="card">
-                <h2>Localização</h2>
-                <p>O Colégio Cívico Militar Professora Luiza Ross está localizado no bairro Boqueirão, em Curitiba, PR.</p>
-                <p><strong>Endereço:</strong> Rua Maestro Carlos Frank, 616 - Boqueirão</p>
-                <a href="https://www.google.com/maps/place/R.+Maestro+Carlos+Frank,+616+-+Boqueir%C3%A3o,+Curitiba+-+PR,+81730-320/@-25.5036733,-49.2335198,17z/data=!3m1!4b1!4m6!3m5!1s0x94dce418f7c9e05f:0x9335f4922e96434d!8m2!3d-25.5036782!4d-49.2309449!16s%2Fg%2F11c6d3_773" class="map-button" target="_blank">Ver no Google Maps</a>
-            </section>
-        </div>
+        <section id="ensino" class="section-container">
+            <div class="section-content">
+                <h2>Ensino e Projetos</h2>
+                <h3>Modalidades de Ensino</h3>
+                <p>Oferecemos Ensino Fundamental (6º ao 9º ano), Ensino Médio e cursos técnicos em informática, com uma abordagem prática e moderna.</p>
+                <h3>Projetos Pedagógicos</h3>
+                <p>Nossos projetos envolvem atividades culturais, esportivas, sociais e cívico-militares, que complementam a formação integral dos alunos.</p>
+                <h3>Atividades Cívico-Militares</h3>
+                <p>Momentos como a tradicional marcha fortalecem o espírito de união, disciplina e cidadania. Veja o vídeo que mostra esse importante momento em nossa escola.</p>
+                <a href="https://www.youtube.com/watch?v=6Xq3-mUx3X4" class="action-button" target="_blank">Ver vídeo da marcha</a>
+            </div>
+            <div class="image-gallery">
+                <img src="https://www.instagram.com/p/CL9NWk3h0CR/" alt="Foto das aulas" class="gallery-img">
+                <img src="https://www.instagram.com/p/CM4w5X1H4_4/" alt="Projetos pedagógicos" class="gallery-img">
+            </div>
+        </section>
+
+        <section id="matriculas" class="section-container">
+            <div class="section-content">
+                <h2>Matrículas</h2>
+                <p>Confira o calendário, documentação necessária e o passo a passo para garantir sua vaga em nossa escola.</p>
+                <img src="https://www.instagram.com/p/CIk9LrnBRzX/" alt="Foto da secretaria" class="gallery-img">
+                <div class="button-group">
+                    <a href="https://seed.pr.gov.br/" class="action-button" target="_blank">Pré-matrícula online</a>
+                    <a href="mailto:ctaluizaross@seed.pr.gov.br" class="action-button secondary-button">Fale com a secretaria</a>
+                </div>
+            </div>
+            <div class="section-content">
+                <h2>Documentos e Regulamentos</h2>
+                <p>Acesse documentos importantes como o regimento escolar, calendário acadêmico, normas do programa cívico-militar e formulários.</p>
+                <a href="https://seed.pr.gov.br/arquivos/File/educacao-civico-militar/" class="action-button" target="_blank">Baixar Documentos</a>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <div class="section-content">
+                <h2>Contato</h2>
+                <p>Estamos disponíveis para esclarecer dúvidas e atender você com todo o suporte necessário.</p>
+                <p><strong>Endereço:</strong> Rua Maestro Carlos Frank, 616 – Boqueirão, Curitiba – PR</p>
+                <p><strong>Telefone:</strong> (41) 3286-2724</p>
+                <p><strong>E-mail:</strong> <a href="mailto:ctaluizaross@seed.pr.gov.br" class="contact-link">ctaluizaross@seed.pr.gov.br</a></p>
+                <a href="https://goo.gl/maps/zX4UQ4Nj2PmLwBz39" class="action-button" target="_blank">Ver no Google Maps</a>
+                <a href="https://wa.me/554132862724" class="action-button secondary-button" target="_blank">Fale pelo WhatsApp</a>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/place/R.+Maestro+Carlos+Frank,+616+-+Boqueir%C3%A3o,+Curitiba+-+PR,+81730-320/@-25.5036733,-49.2335198,17z/data=!3m1!4b1!4m6!3m5!1s0x94dce418f7c9e05f:0x9335f4922e96434d!8m2!3d-25.5036782!4d-49.2309449!16s%2Fg%2F11c6d3_773" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
     </main>
 
-    <section id="contato" class="full-width-section">
-        <div class="container">
-            <h2>Fale Conosco</h2>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu Email" required>
-                <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
-                <button type="submit" class="map-button">Enviar Mensagem</button>
-            </form>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <p>Siga-nos no Instagram: <a href="https://www.instagram.com/colegioluizaross?igsh=bTQxZTF5aGxmdmJk" target="_blank">@colegioluizaross</a></p>
+                <p>Acesse o Portal do Aluno: <a href="https://educacao.pr.gov.br/portal" target="_blank">educacao.pr.gov.br/portal</a></p>
+            </div>
+            <p class="copyright">© 2024 Colégio Cívico Militar Professora Luiza Ross. Todos os direitos reservados. Website por **Erick Pages Ltda.**</p>
         </div>
-    </section>
-
-    <footer>
-        <p>Siga-nos no Instagram: <a href="https://www.instagram.com/colegioluizaross?igsh=bTQxZTF5aGxmdmJk" target="_blank">@colegioluizaross</a></p>
-        <p>© 2024 Colégio Cívico Militar Professora Luiza Ross. Todos os direitos reservados. Website por **Erick Pages Ltda.**</p>
     </footer>
 
 </body>
