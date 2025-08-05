@@ -12,12 +12,23 @@
 <body>
 
     <header>
-        <h1>Colégio Cívico Militar Professora Luiza Ross</h1>
-        <p>Excelência em Educação no Boqueirão</p>
+        <nav>
+            <div class="logo">Colégio Luiza Ross</div>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Colégio Cívico Militar Professora Luiza Ross</h1>
+            <p>Excelência em Educação no Boqueirão</p>
+        </div>
     </header>
 
     <main class="container">
-        <section class="card">
+        <section id="sobre" class="card">
             <h2>Sobre o Colégio Cívico-Militar</h2>
             <p>O Colégio Cívico-Militar Professora Luiza Ross integra o modelo de ensino do Paraná, unindo a alta qualidade pedagógica com princípios de civismo e gestão militar. Esta proposta visa o desenvolvimento integral do aluno, focando não apenas no desempenho académico, mas também na formação de valores como disciplina, respeito e patriotismo.</p>
             <p>A gestão do colégio é partilhada entre diretores civis e militares. A equipa pedagógica civil continua responsável pelo conteúdo curricular e pelo processo de ensino, enquanto a equipa militar atua na gestão de disciplina e na promoção de atividades cívicas e extracurriculares. A rotina dos alunos inclui o uso de uniformes, cumprimento de horários e participação em cerimónias cívicas, que reforçam o senso de comunidade e responsabilidade.</p>
@@ -25,7 +36,7 @@
         </section>
 
         <div class="side-content">
-            <section class="card">
+            <section id="diferenciais" class="card">
                 <h2>Nossos Diferenciais</h2>
                 <ul>
                     <li>Ensino Fundamental e Médio</li>
@@ -35,7 +46,7 @@
                 </ul>
             </section>
         
-            <section class="card">
+            <section id="localizacao" class="card">
                 <h2>Localização</h2>
                 <p>O Colégio Cívico Militar Professora Luiza Ross está localizado no bairro Boqueirão, em Curitiba, PR.</p>
                 <p><strong>Endereço:</strong> Rua Maestro Carlos Frank, 616 - Boqueirão</p>
@@ -44,9 +55,21 @@
         </div>
     </main>
 
+    <section id="contato" class="full-width-section">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="map-button">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <p>Siga-nos no Instagram: <a href="https://www.instagram.com/colegioluizaross?igsh=bTQxZTF5aGxmdmJk" target="_blank">@colegioluizaross</a></p>
-        <p>© 2025 Erick Pages. Todos os direitos reservados.</p>
+        <p>© 2024 Colégio Cívico Militar Professora Luiza Ross. Todos os direitos reservados. Website por **Erick Pages Ltda.**</p>
     </footer>
 
 </body>
