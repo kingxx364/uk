@@ -4,7 +4,7 @@
     --text-color-dark: #212121; /* Texto Principal */
     --text-color-light: #FFFFFF; /* Texto Claro */
     --accent-color: #C8102E; /* Vermelho Vivo - Botões e Destaques */
-    --highlight-color: #FFD700; /* Dourado - Hover */
+    --highlight-color: #FFD700; /* Dourado - Destaque de links */
     --shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
@@ -20,7 +20,7 @@ body {
 /* --- Hero Section (Página Inicial) --- */
 .hero {
     background-color: var(--primary-color);
-    background-image: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('https://picsum.photos/1920/1080?random=1');
+    background-image: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.9)), url('https://picsum.photos/1920/1080?city');
     background-size: cover;
     background-position: center;
     color: var(--text-color-light);
@@ -58,14 +58,14 @@ body {
 }
 
 .nav-links a {
-    color: var(--text-color-light);
+    color: var(--highlight-color);
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--highlight-color);
+    color: var(--text-color-light);
 }
 
 .hero-content {
@@ -183,14 +183,16 @@ li {
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
     border: none;
     cursor: pointer;
+    box-shadow: none; /* Removendo o sombreamento */
 }
 
 .action-button:hover {
-    background-color: #A90D24;
+    background-color: var(--primary-color);
     transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Sombra mais profissional no hover */
 }
 
 .secondary-button {
@@ -202,6 +204,7 @@ li {
 .secondary-button:hover {
     background-color: var(--text-color-light);
     color: var(--accent-color);
+    transform: translateY(-3px);
 }
 
 .button-group {
