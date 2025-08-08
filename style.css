@@ -224,7 +224,7 @@ li {
 .contact-section {
     display: flex;
     gap: 2rem;
-    background-color: white;
+    background-color: red;
     padding: 3rem;
     border-radius: 15px;
     box-shadow: var(--shadow);
