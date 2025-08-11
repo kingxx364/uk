@@ -4,7 +4,7 @@
     --text-color-dark: #212121; /* Texto Principal */
     --text-color-light: #FFFFFF; /* Texto Claro */
     --accent-color: #C8102E; /* Vermelho Vivo - Botões e Destaques */
-    --highlight-color: #F5F5F5; /* Dourado - Destaque de links */
+    --highlight-color: #003366; /* Dourado - Destaque de links */
     --shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
